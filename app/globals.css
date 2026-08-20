@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F6F4EC;
+  color: #1C2321;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Signature motif: terraced rice-field divider */
+.terrace-divider {
+  display: block;
+  width: 100%;
+  line-height: 0;
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.is-visible {
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(24px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Stepped "terrace" card corner, echoing rice terraces, used sparingly on featured cards */
+.terrace-corner {
+  clip-path: polygon(
+    0% 0%, 100% 0%, 100% 85%, 85% 85%, 85% 92%, 70% 92%, 70% 100%, 0% 100%
+  );
+}
+
+::selection {
+  background-color: #E4A322;
+  color: #0B4F3F;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #E4A322;
+  outline-offset: 2px;
+}
