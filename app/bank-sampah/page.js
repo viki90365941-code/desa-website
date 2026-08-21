@@ -75,10 +75,7 @@ export default async function BankSampahPage() {
 
           <Reveal className="mt-12">
             <h2 className="font-display text-lg font-bold text-forest-dark">Perkiraan Harga Jenis Sampah</h2>
-            <p className="mt-1 text-sm text-mist">
-              Harga berikut akan diperbarui begitu unit Bank Sampah RW 08 resmi beroperasi dan menetapkan
-              daftar harga sesuai kesepakatan pengurus dan pengepul/bank sampah induk.
-            </p>
+
             <div className="mt-5 overflow-hidden rounded-2xl ring-1 ring-forest/10">
               <table className="w-full text-left text-sm">
                 <thead className="bg-forest text-paper">
@@ -104,10 +101,7 @@ export default async function BankSampahPage() {
                 <h2 className="font-display text-lg font-bold text-forest-dark">
                   Rekap Kiloan &amp; Pendapatan Bulanan
                 </h2>
-                <p className="mt-1 text-sm text-mist">
-                  Total sampah tertimbang dan hasil penjualan yang dibagikan/ditabungkan ke warga setiap
-                  bulannya. Kolom masih kosong karena penimbangan resmi belum dimulai.
-                </p>
+                
               </div>
               <div className="flex gap-4 text-right">
                 <div>

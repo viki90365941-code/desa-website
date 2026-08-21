@@ -1,3 +1,5 @@
+require("dotenv").config({ path: ".env.local" });
+
 const { createClient } = require("@libsql/client");
 const path = require("path");
 const fs = require("fs");
