@@ -52,7 +52,7 @@ export default function Footer({ profil }) {
         </div>
       </div>
       <div className="border-t border-white/10 py-5 text-center text-xs text-paper/50">
-        © {new Date().getFullYear()} {nama}. Seluruh hak cipta dilindungi.
+        © {new Date().getFullYear()} {nama}. Seluruh hak cipta dilindungi by KKN UMT CIMAK 2026.
       </div>
     </footer>
   );
